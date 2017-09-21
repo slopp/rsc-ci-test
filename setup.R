@@ -30,6 +30,7 @@ message(paste0(ptha, ' created'))
 # add the token to the DCF file
 account.dcf <- read.dcf(paste0(account, '.dcf'), all = TRUE)
 account.dcf$token = Sys.getenv('DEPLOY_TOKEN')
+account.dcf$private_key = Sys.getenv('DEPLOY_KEY')
 
 # write the account file to the proper location
 message('Attempting to write account dcf...')
