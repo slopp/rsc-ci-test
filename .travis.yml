@@ -1,0 +1,26 @@
+dist: trust
+language: r
+sudo: false
+r: 3.3.3
+
+# install packrat and rsconnect
+# then restore the package environment (can be slow)
+install:
+  - R  -e 'if (system.file(package="packrat")=="") install.packages('packrat')'
+  - R  -e 'if (system.file(package="rsconnect")=="") install.packages('rsconnect')'
+  - R  -e 'pakrat::packify(); packrat::restore()'
+
+# cache the packrat & rsconnect
+# also cache the packages installed during restore
+cache:
+  packages: true
+  directories:
+    - packrat/lib
+
+# setup the directory with the rsconnect publishing credentials
+# requires that 
+before_install:
+  - R -f setup.R 
+   
+script: 
+  - R -f deploy.R
