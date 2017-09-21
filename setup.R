@@ -27,7 +27,7 @@ ptha <- paste0(pth, '/accounts')
 dir.create(ptha)
 message(paste0(ptha, ' created'))
 
-# add the token to the DCF file
+# add the token and key to the DCF file
 account.dcf <- read.dcf(paste0(account, '.dcf'), all = TRUE)
 account.dcf$token = Sys.getenv('DEPLOY_TOKEN')
 account.dcf$private_key = Sys.getenv('DEPLOY_KEY')
