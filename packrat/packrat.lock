@@ -1,0 +1,88 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.8.39
+RVersion: 3.3.3
+Repos: CRAN=https://cran.rstudio.com/
+
+Package: R6
+Source: CRAN
+Version: 2.2.2
+Hash: b2366cd9d2f3851a5704b4e192b985c2
+
+Package: Rcpp
+Source: CRAN
+Version: 0.12.12
+Hash: 8b3d5ebb9a9a4ab5c86b3a81b0cfb774
+
+Package: babynames
+Source: CRAN
+Version: 0.3.0
+Hash: ff033f209d276ec7ec3574762a2a14b0
+Requires: tibble
+
+Package: digest
+Source: CRAN
+Version: 0.6.12
+Hash: e53fb8c58673df868183697e39a6a4d6
+
+Package: htmltools
+Source: CRAN
+Version: 0.3.6
+Hash: 5b070a04ef8df1953544873db1c5896e
+Requires: Rcpp, digest
+
+Package: httpuv
+Source: CRAN
+Version: 1.3.5
+Hash: 2cc5284565b71276d1faf3d5c043fe4e
+Requires: Rcpp
+
+Package: jsonlite
+Source: CRAN
+Version: 1.5
+Hash: 9c51936d8dd00b2f1d4fe9d10499694c
+
+Package: mime
+Source: CRAN
+Version: 0.5
+Hash: 463550cf44fb6f0a2359368f42eebe62
+
+Package: packrat
+Source: github
+Version: 0.4.8-39
+Hash: 2f807ce6795e57bc5bb42e9683bff737
+GithubRepo: packrat
+GithubUsername: rstudio
+GithubRef: master
+GithubSha1: ebfaf71552047b9e1ccd652bdadde01a8305a054
+
+Package: rlang
+Source: github
+Version: 0.1.2.9000
+Hash: 5f58df3dcec0feefaf753136c8092a49
+GithubRepo: rlang
+GithubUsername: tidyverse
+GithubRef: master
+GithubSha1: 99105b698124693fbbd0bb3b8a862c1378d3e8e4
+
+Package: shiny
+Source: CRAN
+Version: 1.0.5
+Hash: 4d47532a807122bfd6bc3818310f9d2e
+Requires: R6, digest, htmltools, httpuv, jsonlite, mime, sourcetools,
+    xtable
+
+Package: sourcetools
+Source: CRAN
+Version: 0.1.6
+Hash: 226d56d7469587da40b0f96180e711b4
+
+Package: tibble
+Source: CRAN
+Version: 1.3.4
+Hash: 3111e0d62502af60fe0fa8b4213fedad
+Requires: Rcpp, rlang
+
+Package: xtable
+Source: CRAN
+Version: 1.8-2
+Hash: 7293235cfcc14cdff1ce7fd1a0212031
