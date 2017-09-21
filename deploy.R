@@ -1,3 +1,4 @@
+library(rsconnect)
 rsconnect::deployApp(
   appDir = ".",
   appFiles = c('app.R'),

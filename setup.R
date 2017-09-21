@@ -47,7 +47,9 @@ message(paste0(f, ' created'))
 orig <- paste0(Sys.getenv('TRAVIS_BUILD_DIR'), '/', server, '.dcf')
 dest <- paste0(pths, '/', server, '.dcf')
 message(paste0('Attempting to copy ', orig, ' to ', dest))
-file.copy(from = orig, to = dest)
+res <- file.copy(from = orig, to = dest)
+if (!res)
+  stop("Failed")
 message('Copied')
 
 
