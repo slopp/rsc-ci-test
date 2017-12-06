@@ -31,7 +31,7 @@ Steps:
 
 4. Copy the 2 dcf files into the repository. Note that one file has the name of the server (colorado.rstudio.com.dcf) and the other file has the name of the account (sean.dcf)
 
-5. Open the account dcf file. (In my case, the file named sean.dcf). The file consists of key-value pairs in the form: `key: value`. For the keys `token` and `private_key`, carefully copy the values to safe location for later, and then remove them fron the file. *DON'T* remove the key, at the end you should have a file like:
+5. Open the account dcf file. (In my case, the file named sean.dcf). The file consists of key-value pairs in the form: `key: value`. For the keys `token` and `private_key`, carefully copy the values to safe location for later, and then remove them from the file. *DON'T* remove the key, at the end you should have a file like:
 
 ```
 username: sean
